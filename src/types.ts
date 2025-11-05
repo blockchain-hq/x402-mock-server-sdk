@@ -15,7 +15,7 @@ export interface X402ServerConfig {
     scheme: 'solana';
     network: string;
     recipient: string;
-    token: string;
+    token?: string;
     amount: string;
     decimals: number;
   }
