@@ -14,6 +14,10 @@
   "keywords": [],
   "author": "Mahima Thacker",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blockchain-hq/x402-server-sdk.git"
+  },
   "type": "commonjs",
   "dependencies": {
     "@solana/web3.js": "^1.98.4",
