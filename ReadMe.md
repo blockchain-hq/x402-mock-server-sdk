@@ -5,21 +5,21 @@ Server-side SDK for the x402 payment protocol on Solana. Return HTTP 402 respons
 [![npm version](https://badge.fury.io/js/x402-server-sdk.svg)](https://www.npmjs.com/package/x402-server-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Features
+## Features
 
-- ✅ Return 402 Payment Required responses
-- ✅ Verify SOL payments on-chain
-- ✅ Prevent replay attacks
-- ✅ Devnet & Mainnet support
-- ✅ TypeScript support
+- Return 402 Payment Required responses
+- Verify SOL payments on-chain
+- Prevent replay attacks
+- Devnet & Mainnet support
+- TypeScript support
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install x402-server-sdk
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```typescript
 import { SolanaX402Server } from 'x402-server-sdk';
@@ -51,7 +51,7 @@ app.get('/premium', async (req, res) => {
 });
 ```
 
-## 📖 API
+## API
 
 ### Constructor
 
@@ -72,7 +72,7 @@ new SolanaX402Server({
 | `verifyPayment(signature, amount, maxAge?)` | Verify payment | `Promise<PaymentVerification>` |
 | `getRecipientBalance()` | Get wallet balance | `Promise<number>` |
 
-## 🔒 Security
+## Security
 
 ```typescript
 // Set max age to prevent replay attacks
@@ -88,7 +88,7 @@ if (await db.isSignatureUsed(signature)) {
 }
 ```
 
-## 🌐 Networks
+## Networks
 
 **Devnet:**
 ```typescript
@@ -106,11 +106,11 @@ const server = new SolanaX402Server({
 });
 ```
 
-## 📚 Documentation
+## Documentation
 
 Full documentation: [docs.x402.org](https://docs.x402.org)
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Error | Solution |
 |-------|----------|
@@ -119,19 +119,19 @@ Full documentation: [docs.x402.org](https://docs.x402.org)
 | Transaction too old | Increase maxAge or get new payment |
 | Recipient not found | Verify wallet address and network |
 
-## 📄 License
+## License
 
 MIT
 
-## 🤝 Contributing
+## Contributing
 
-Issues and PRs welcome! See [CONTRIBUTING.md](CONTRIBUTING.md)
+Issues and PRs welcome!
 
-## 💬 Support
+## Support
 
 - [GitHub Issues](https://github.com/YOUR_USERNAME/x402-server-sdk/issues)
 - [Discord](https://discord.gg/YOUR_DISCORD)
 
 ---
 
-Made with ❤️ for Solana
+Made with love for Solana
